@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 var firebaseUsers = new Firebase("https://blinding-inferno-7166.firebaseio.com/users");
@@ -41,3 +42,18 @@ document.getElementById("submitBtn").addEventListener("click",function()
 
 
 
+=======
+var myemail = $('#inputEmail').val();
+var mypassword = $('#inputPassword').val();
+
+$('#submitBtn').on("click", function (){
+
+db.inventory.insert(
+   {
+     user: "user1" ,
+     email: myemail,
+     password: mypassword
+   }
+)
+}
+>>>>>>> Stashed changes
