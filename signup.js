@@ -12,13 +12,17 @@ document.getElementById("submitBtn").addEventListener("click",function()
 	var password = document.getElementById("inputPassword").value;
 	var skills = document.getElementById("inputCourses").value;
 
-	firebaseUsers.set(
-		{ "email":{
+	firebaseUsers.push(
+		{ user:{
+			email: email,
 			password: password
 		}
 	});
 
-	console.log("Clicky");
+	firebaseSkills.push(
+	{
+		skills: skills
+	});
 
 }, false);
 
